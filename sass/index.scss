@@ -1,0 +1,11 @@
+// variables / global
+@import "variables";
+@import "global";
+
+// mobile
+@import "./components/mobile"; // navbar
+@import "./sass/components/navbar";
+// hero
+@import "./components/hero"; // sidebar / left slider
+// main
+// footer

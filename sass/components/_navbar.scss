@@ -1,0 +1,52 @@
+@media (min-width: 800px) {
+  nav {
+    .nav-container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      background: $nav-bar-bg;
+      // height: 50px;
+      height: auto;
+      max-width: 100%;
+      margin: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px;
+    }
+    .logo {
+      color: rgb(186, 155, 156);
+      letter-spacing: 5px;
+    }
+    .nav-links {
+      ul {
+        display: flex;
+        // padding: 10px;
+        text-align: center;
+        align-items: center;
+
+        .links {
+          text-transform: uppercase;
+          letter-spacing: 4px;
+          font-size: 14px;
+          font-weight: 300;
+          color: rgb(186, 155, 156);
+          margin-left: 50px;
+          .fa-shopping-bag {
+            color: rgb(186, 155, 156);
+            font-size: 20px;
+          }
+        }
+      }
+    }
+    .fa-bars {
+      display: none;
+    }
+    .fa-times {
+      display: none;
+    }
+  }
+}
+
+// mobile

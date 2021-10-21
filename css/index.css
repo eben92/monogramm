@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700;900&display=swap");
+::before,
+::after,
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Prompt", sans-serif;
+  background: #f0efed;
+  height: 500vh;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+@media (max-width: 799px) {
+  nav .nav-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #1a2456;
+    height: auto;
+    max-width: 100%;
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+  nav .logo {
+    color: #ba9b9c;
+    letter-spacing: 5px;
+  }
+  nav .nav-links ul {
+    transition: all 0.7s linear;
+    transform: translateX(100%);
+    background-color: #1a2456;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 1;
+    top: 55;
+  }
+  nav .nav-links ul .links {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 16px;
+    font-weight: 300;
+    color: #ba9b9c;
+    margin-left: 50px;
+    padding-top: 15px;
+    margin-top: 15px;
+  }
+  nav .nav-links ul .links .fa-shopping-bag {
+    color: #ba9b9c;
+    font-size: 20px;
+    padding-bottom: 20px;
+  }
+  nav .nav-links .show-sidebar {
+    transform: translateX(0);
+  }
+  nav .fa-bars {
+    font-size: 20px;
+    color: #ba9b9c;
+    cursor: pointer;
+    transition: all 0.5s linear;
+  }
+  nav .fa-bars:hover {
+    transform: rotate(90deg);
+  }
+  nav .fa-times {
+    display: none;
+    color: #ba9b9c;
+    font-size: 20px;
+    transition: all 0.3s linear;
+    cursor: pointer;
+  }
+  nav .close-btn {
+    display: block;
+  }
+  nav .hide-btn {
+    display: none;
+  }
+  nav .fa-times:hover {
+    transform: rotate(360deg);
+  }
+}
+@media (min-width: 800px) {
+  nav .nav-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #1a2456;
+    height: auto;
+    max-width: 100%;
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+  }
+  nav .logo {
+    color: #ba9b9c;
+    letter-spacing: 5px;
+  }
+  nav .nav-links ul {
+    display: flex;
+    text-align: center;
+    align-items: center;
+  }
+  nav .nav-links ul .links {
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 14px;
+    font-weight: 300;
+    color: #ba9b9c;
+    margin-left: 50px;
+  }
+  nav .nav-links ul .links .fa-shopping-bag {
+    color: #ba9b9c;
+    font-size: 20px;
+  }
+  nav .fa-bars {
+    display: none;
+  }
+  nav .fa-times {
+    display: none;
+  }
+}
+@media (max-width: 3000px) {
+  header {
+    position: absolute;
+    z-index: -10;
+    width: 100%;
+  }
+  header .slideshow-container {
+    /* Fading animation */
+  }
+  header .slideshow-container .mySlides img {
+    max-height: 90vh;
+    width: 100%;
+  }
+  header .slideshow-container .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 3s;
+    animation-name: fade;
+    animation-duration: 3s;
+  }
+  @-webkit-keyframes fade {
+    from {
+      opacity: 0.4;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  @keyframes fade {
+    from {
+      opacity: 0.4;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  .dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+  }
+
+  .active {
+    background-color: #717171;
+  }
+}
