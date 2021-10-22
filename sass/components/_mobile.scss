@@ -1,6 +1,7 @@
 @media (max-width: 799px) {
   nav {
     .nav-container {
+      z-index: 100000;
       position: fixed;
       top: 0;
       left: 0;
@@ -80,107 +81,95 @@
   }
 }
 
-// @media (min-width: 601px) {
-//   header {
-//     z-index: -10;
-//     .slideshow-container {
-//       .mySlides {
-//         img {
-//           max-height: 90vh;
-//           width: 100%;
+@media (max-width: 999px) {
+  main {
+    // padding-top: 15rem;
+    section {
+      .creative-packs {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
 
-//           // max-height: 50vh;
-//           // width: 100%;
-//         }
-//       }
-//       /* Fading animation */
-//       .fade {
-//         -webkit-animation-name: fade;
-//         -webkit-animation-duration: 1.5s;
-//         animation-name: fade;
-//         animation-duration: 1.5s;
-//       }
+        .flex-container {
+          display: flex;
+          flex-direction: column;
+          padding: 20px;
+          align-items: center;
 
-//       @-webkit-keyframes fade {
-//         from {
-//           opacity: 0.4;
-//         }
-//         to {
-//           opacity: 1;
-//         }
-//       }
+          .img {
+            a {
+              img {
+                max-width: 80vw;
+                max-height: 50vh;
+              }
+              img:hover {
+                background-image: "/assets/monogram/items.png";
+              }
+            }
+          }
+          .left-item,
+          .right-item {
+            margin: 30px 0;
 
-//       @keyframes fade {
-//         from {
-//           opacity: 0.4;
-//         }
-//         to {
-//           opacity: 1;
-//         }
-//       }
-//     }
-//     .dot {
-//       height: 15px;
-//       width: 15px;
-//       margin: 0 2px;
-//       background-color: #bbb;
-//       border-radius: 50%;
-//       display: inline-block;
-//       transition: background-color 0.6s ease;
-//     }
-//     .active {
-//       background-color: #717171;
-//     }
-//   }
-// }
+            .p-flex {
+              display: flex;
+              justify-content: space-between;
 
-// @media (max-width: 600px) {
-//   header {
-//     z-index: -10;
-//     .slideshow-container {
-//       .mySlides {
-//         img {
-//           max-height: 0vh;
-//           width: 100%;
-//         }
-//       }
-//       /* Fading animation */
-//       .fade {
-//         -webkit-animation-name: fade;
-//         -webkit-animation-duration: 1.5s;
-//         animation-name: fade;
-//         animation-duration: 1.5s;
-//       }
+              a {
+                p {
+                  font-size: 20px;
+                  font-weight: 700;
+                  text-transform: uppercase;
+                  letter-spacing: 2px;
 
-//       @-webkit-keyframes fade {
-//         from {
-//           opacity: 0.4;
-//         }
-//         to {
-//           opacity: 1;
-//         }
-//       }
+                  color: $nav-bar-bg;
+                }
+                margin-top: 10px;
+              }
+            }
 
-//       @keyframes fade {
-//         from {
-//           opacity: 0.4;
-//         }
-//         to {
-//           opacity: 1;
-//         }
-//       }
-//     }
-//     .dot {
-//       height: 15px;
-//       width: 15px;
-//       margin: 0 2px;
-//       background-color: #bbb;
-//       border-radius: 50%;
-//       display: inline-block;
-//       transition: background-color 0.6s ease;
-//     }
-//     .active {
-//       background-color: #717171;
-//     }
-//   }
-// }
+            .desc {
+              p {
+                color: $nav-bar-bg;
+                font-weight: 200;
+                font-size: 13px;
+              }
+            }
+          }
+        }
+        .banner {
+          a {
+            img {
+              max-width: 80vw;
+              max-height: 50vh;
+            }
+          }
+          .banner-desc-flex {
+            display: flex;
+            justify-content: space-between;
+
+            a {
+              p {
+                font-size: 20px;
+                font-weight: 700;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+
+                color: $nav-bar-bg;
+              }
+              margin-top: 10px;
+            }
+          }
+
+          .desc {
+            p {
+              color: $nav-bar-bg;
+              font-weight: 200;
+              font-size: 13px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,9 +1,10 @@
 @media (max-width: 3000px) {
+  // 540 downwards is coool with the height being 300px
+  // 320 downwards need a lttle downgrade
   header {
-    position: absolute;
-    z-index: -10;
-    width: 100%;
     .slideshow-container {
+      z-index: -10000;
+
       .mySlides {
         img {
           max-height: 90vh;
@@ -36,18 +37,114 @@
         }
       }
     }
-    // .dot {
-    //   height: 15px;
-    //   width: 15px;
-    //   margin: 0 2px;
-    //   background-color: #bbb;
-    //   border-radius: 50%;
-    //   display: inline-block;
-    //   transition: background-color 0.3s ease;
-    // }
-    // .active {
-    //   background-color: #717171;
-    // }
+  }
+  .dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+  }
+  .active {
+    background-color: #717171;
+  }
+}
+
+@media (max-width: 540px) {
+  // 540 downwards is coool with the height being 300px
+  // 320 downwards need a lttle downgrade
+  header {
+    .slideshow-container {
+      z-index: -10000;
+
+      .mySlides {
+        img {
+          height: 300px;
+          width: 100%;
+        }
+      }
+      /* Fading animation */
+      .fade {
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 3s;
+        animation-name: fade;
+        animation-duration: 3s;
+      }
+
+      @-webkit-keyframes fade {
+        from {
+          opacity: 0.4;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      @keyframes fade {
+        from {
+          opacity: 0.4;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+    }
+  }
+  .dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+  }
+  .active {
+    background-color: #717171;
+  }
+}
+
+@media (max-width: 350px) {
+  // 540 downwards is coool with the height being 300px
+  // 320 downwards need a lttle downgrade
+  header {
+    .slideshow-container {
+      z-index: -10000;
+
+      .mySlides {
+        img {
+          height: 250px;
+          width: 100%;
+        }
+      }
+      /* Fading animation */
+      .fade {
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 3s;
+        animation-name: fade;
+        animation-duration: 3s;
+      }
+
+      @-webkit-keyframes fade {
+        from {
+          opacity: 0.4;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      @keyframes fade {
+        from {
+          opacity: 0.4;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+    }
   }
   .dot {
     height: 15px;
