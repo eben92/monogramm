@@ -95,6 +95,179 @@ li {
     transform: rotate(360deg);
   }
 }
+@media (max-width: 375px) {
+  main section .creative-packs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  main section .creative-packs .flex-container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    align-items: center;
+  }
+  main section .creative-packs .flex-container .img a img {
+    max-width: 80vw;
+    max-height: 50vh;
+  }
+  main section .creative-packs .flex-container .img a img:hover {
+    background-image: "/assets/monogram/items.png";
+  }
+  main section .creative-packs .flex-container .left-item,
+main section .creative-packs .flex-container .right-item {
+    position: relative;
+    margin: 30px 0;
+  }
+  main section .creative-packs .flex-container .left-item .img-hover,
+main section .creative-packs .flex-container .right-item .img-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    object-fit: contain;
+    opacity: 0;
+    transition: opacity 0.2s;
+  }
+  main section .creative-packs .flex-container .left-item .p-flex,
+main section .creative-packs .flex-container .right-item .p-flex {
+    display: flex;
+    justify-content: space-between;
+  }
+  main section .creative-packs .flex-container .left-item .p-flex a,
+main section .creative-packs .flex-container .right-item .p-flex a {
+    margin-top: 10px;
+  }
+  main section .creative-packs .flex-container .left-item .p-flex a p,
+main section .creative-packs .flex-container .right-item .p-flex a p {
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #1a2456;
+  }
+  main section .creative-packs .flex-container .left-item .p-flex a p:hover,
+main section .creative-packs .flex-container .right-item .p-flex a p:hover {
+    color: #080b1b;
+  }
+  main section .creative-packs .flex-container .left-item .p-flex .sprice,
+main section .creative-packs .flex-container .right-item .p-flex .sprice {
+    position: relative;
+  }
+  main section .creative-packs .flex-container .left-item .p-flex .sprice .price,
+main section .creative-packs .flex-container .right-item .p-flex .sprice .price {
+    position: absolute;
+    top: 4;
+    right: 1;
+  }
+  main section .creative-packs .flex-container .left-item .p-flex .sprice .shop,
+main section .creative-packs .flex-container .right-item .p-flex .sprice .shop {
+    background: #1a2456;
+    color: #f0efed;
+    padding: 4px;
+    font-weight: 400;
+    font-size: 12px;
+    border-radius: 20px;
+    position: relative;
+    right: 1;
+    top: 10;
+    opacity: 0;
+    transition: opacity 0.2s;
+  }
+  main section .creative-packs .flex-container .left-item .p-flex .sprice .shop:hover,
+main section .creative-packs .flex-container .right-item .p-flex .sprice .shop:hover {
+    background: #080b1b;
+  }
+  main section .creative-packs .flex-container .left-item .desc p,
+main section .creative-packs .flex-container .right-item .desc p {
+    color: #1a2456;
+    font-weight: 200;
+    font-size: 13px;
+  }
+  main section .creative-packs .flex-container .left-item .desc p:hover,
+main section .creative-packs .flex-container .right-item .desc p:hover {
+    color: #080b1b;
+  }
+  main section .creative-packs .flex-container .left-item:hover .img-hover,
+main section .creative-packs .flex-container .right-item:hover .img-hover {
+    opacity: 1;
+  }
+  main section .creative-packs .flex-container .left-item:hover .p-flex .sprice .shop,
+main section .creative-packs .flex-container .right-item:hover .p-flex .sprice .shop {
+    opacity: 1;
+  }
+  main section .creative-packs .banner {
+    position: relative;
+  }
+  main section .creative-packs .banner a img {
+    max-width: 80vw;
+    max-height: 50vh;
+  }
+  main section .creative-packs .banner a .img-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    transition: opacity 0.2s;
+  }
+  main section .creative-packs .banner .banner-desc-flex {
+    display: flex;
+    justify-content: space-between;
+  }
+  main section .creative-packs .banner .banner-desc-flex a {
+    margin-top: 10px;
+  }
+  main section .creative-packs .banner .banner-desc-flex a p {
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #1a2456;
+  }
+  main section .creative-packs .banner .banner-desc-flex a p:hover {
+    color: #080b1b;
+  }
+  main section .creative-packs .banner .banner-desc-flex .sprice {
+    position: relative;
+  }
+  main section .creative-packs .banner .banner-desc-flex .sprice .price {
+    position: absolute;
+    top: 4;
+    right: 30;
+  }
+  main section .creative-packs .banner .banner-desc-flex .sprice .shop {
+    background: #1a2456;
+    color: #f0efed;
+    padding: 4px;
+    width: 100px;
+    font-weight: 400;
+    font-size: 12px;
+    border-radius: 20px;
+    position: relative;
+    top: 10;
+    opacity: 0;
+    transition: opacity 0.2s;
+  }
+  main section .creative-packs .banner .banner-desc-flex .sprice .shop:hover {
+    background: #080b1b;
+  }
+  main section .creative-packs .banner .desc p {
+    color: #1a2456;
+    font-weight: 200;
+    font-size: 13px;
+  }
+  main section .creative-packs .banner .desc p:hover {
+    color: #080b1b;
+  }
+  main section .creative-packs .banner:hover .img-hover {
+    opacity: 1;
+  }
+  main section .creative-packs .banner:hover .banner-desc-flex .sprice .shop {
+    opacity: 1;
+  }
+}
 @media (max-width: 999px) {
   main section .creative-packs {
     display: flex;
@@ -116,7 +289,18 @@ li {
   }
   main section .creative-packs .flex-container .left-item,
 main section .creative-packs .flex-container .right-item {
+    position: relative;
     margin: 30px 0;
+  }
+  main section .creative-packs .flex-container .left-item .img-hover,
+main section .creative-packs .flex-container .right-item .img-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    object-fit: contain;
+    opacity: 0;
+    transition: opacity 0.2s;
   }
   main section .creative-packs .flex-container .left-item .p-flex,
 main section .creative-packs .flex-container .right-item .p-flex {
@@ -135,15 +319,71 @@ main section .creative-packs .flex-container .right-item .p-flex a p {
     letter-spacing: 2px;
     color: #1a2456;
   }
+  main section .creative-packs .flex-container .left-item .p-flex a p:hover,
+main section .creative-packs .flex-container .right-item .p-flex a p:hover {
+    color: #080b1b;
+  }
+  main section .creative-packs .flex-container .left-item .p-flex .sprice,
+main section .creative-packs .flex-container .right-item .p-flex .sprice {
+    position: relative;
+  }
+  main section .creative-packs .flex-container .left-item .p-flex .sprice .price,
+main section .creative-packs .flex-container .right-item .p-flex .sprice .price {
+    position: absolute;
+    top: 4;
+    right: 1;
+  }
+  main section .creative-packs .flex-container .left-item .p-flex .sprice .shop,
+main section .creative-packs .flex-container .right-item .p-flex .sprice .shop {
+    background: #1a2456;
+    color: #f0efed;
+    padding: 6px;
+    font-weight: 400;
+    font-size: 12px;
+    border-radius: 20px;
+    position: relative;
+    right: 1;
+    top: 10;
+    opacity: 0;
+    transition: opacity 0.2s;
+  }
+  main section .creative-packs .flex-container .left-item .p-flex .sprice .shop:hover,
+main section .creative-packs .flex-container .right-item .p-flex .sprice .shop:hover {
+    background: #080b1b;
+  }
   main section .creative-packs .flex-container .left-item .desc p,
 main section .creative-packs .flex-container .right-item .desc p {
     color: #1a2456;
     font-weight: 200;
     font-size: 13px;
   }
+  main section .creative-packs .flex-container .left-item .desc p:hover,
+main section .creative-packs .flex-container .right-item .desc p:hover {
+    color: #080b1b;
+  }
+  main section .creative-packs .flex-container .left-item:hover .img-hover,
+main section .creative-packs .flex-container .right-item:hover .img-hover {
+    opacity: 1;
+  }
+  main section .creative-packs .flex-container .left-item:hover .p-flex .sprice .shop,
+main section .creative-packs .flex-container .right-item:hover .p-flex .sprice .shop {
+    opacity: 1;
+  }
+  main section .creative-packs .banner {
+    position: relative;
+  }
   main section .creative-packs .banner a img {
     max-width: 80vw;
     max-height: 50vh;
+  }
+  main section .creative-packs .banner a .img-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    transition: opacity 0.2s;
   }
   main section .creative-packs .banner .banner-desc-flex {
     display: flex;
@@ -159,10 +399,46 @@ main section .creative-packs .flex-container .right-item .desc p {
     letter-spacing: 2px;
     color: #1a2456;
   }
+  main section .creative-packs .banner .banner-desc-flex a p:hover {
+    color: #080b1b;
+  }
+  main section .creative-packs .banner .banner-desc-flex .sprice {
+    position: relative;
+  }
+  main section .creative-packs .banner .banner-desc-flex .sprice .price {
+    position: absolute;
+    top: 4;
+    right: 1;
+  }
+  main section .creative-packs .banner .banner-desc-flex .sprice .shop {
+    background: #1a2456;
+    color: #f0efed;
+    padding: 6px;
+    font-weight: 400;
+    font-size: 12px;
+    border-radius: 20px;
+    position: relative;
+    right: 1;
+    top: 10;
+    opacity: 0;
+    transition: opacity 0.2s;
+  }
+  main section .creative-packs .banner .banner-desc-flex .sprice .shop:hover {
+    background: #080b1b;
+  }
   main section .creative-packs .banner .desc p {
     color: #1a2456;
     font-weight: 200;
     font-size: 13px;
+  }
+  main section .creative-packs .banner .desc p:hover {
+    color: #080b1b;
+  }
+  main section .creative-packs .banner:hover .img-hover {
+    opacity: 1;
+  }
+  main section .creative-packs .banner:hover .banner-desc-flex .sprice .shop {
+    opacity: 1;
   }
 }
 @media (min-width: 800px) {
@@ -356,7 +632,7 @@ main section .creative-packs .flex-container .right-item .desc p {
   main section .creative-packs .flex-container {
     display: flex;
   }
-  main section .creative-packs .flex-container .img a img {
+  main section .creative-packs .flex-container .img a .img1 {
     padding: auto;
     margin: auto;
     width: 100%;
@@ -364,8 +640,19 @@ main section .creative-packs .flex-container .right-item .desc p {
   }
   main section .creative-packs .flex-container .left-item,
 main section .creative-packs .flex-container .right-item {
+    position: relative;
     margin: 15px;
     padding: 15px;
+  }
+  main section .creative-packs .flex-container .left-item .img-hover,
+main section .creative-packs .flex-container .right-item .img-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    object-fit: contain;
+    opacity: 0;
+    transition: opacity 0.2s;
   }
   main section .creative-packs .flex-container .left-item .p-flex,
 main section .creative-packs .flex-container .right-item .p-flex {
@@ -383,16 +670,75 @@ main section .creative-packs .flex-container .right-item .p-flex a p {
     text-transform: uppercase;
     letter-spacing: 2px;
     color: #1a2456;
+    transition: all 0.3s linear;
+  }
+  main section .creative-packs .flex-container .left-item .p-flex a p:hover,
+main section .creative-packs .flex-container .right-item .p-flex a p:hover {
+    color: #080b1b;
+  }
+  main section .creative-packs .flex-container .left-item .p-flex .sprice,
+main section .creative-packs .flex-container .right-item .p-flex .sprice {
+    position: relative;
+  }
+  main section .creative-packs .flex-container .left-item .p-flex .sprice .price,
+main section .creative-packs .flex-container .right-item .p-flex .sprice .price {
+    position: absolute;
+    top: 4;
+    right: 1;
+  }
+  main section .creative-packs .flex-container .left-item .p-flex .sprice .shop,
+main section .creative-packs .flex-container .right-item .p-flex .sprice .shop {
+    background: #1a2456;
+    color: #f0efed;
+    padding: 10px;
+    font-weight: 400;
+    font-size: 12px;
+    border-radius: 20px;
+    position: relative;
+    right: 1;
+    top: 10;
+    opacity: 0;
+    transition: opacity 0.2s;
+  }
+  main section .creative-packs .flex-container .left-item .p-flex .sprice .shop:hover,
+main section .creative-packs .flex-container .right-item .p-flex .sprice .shop:hover {
+    background: #080b1b;
   }
   main section .creative-packs .flex-container .left-item .desc p,
 main section .creative-packs .flex-container .right-item .desc p {
     color: #1a2456;
     font-weight: 200;
     font-size: 13px;
+    transition: all 0.3s linear;
+  }
+  main section .creative-packs .flex-container .left-item .desc p:hover,
+main section .creative-packs .flex-container .right-item .desc p:hover {
+    color: #080b1b;
+  }
+  main section .creative-packs .flex-container .left-item:hover .img-hover,
+main section .creative-packs .flex-container .right-item:hover .img-hover {
+    opacity: 1;
+  }
+  main section .creative-packs .flex-container .left-item:hover .p-flex .sprice .shop,
+main section .creative-packs .flex-container .right-item:hover .p-flex .sprice .shop {
+    opacity: 1;
+  }
+  main section .creative-packs .banner {
+    position: relative;
   }
   main section .creative-packs .banner a img {
-    width: 950px;
-    height: 450px;
+    width: 1050px;
+    height: 414px;
+    object-fit: cover;
+  }
+  main section .creative-packs .banner a .img-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    transition: opacity 0.2s;
   }
   main section .creative-packs .banner .banner-desc-flex {
     display: flex;
@@ -408,9 +754,45 @@ main section .creative-packs .flex-container .right-item .desc p {
     letter-spacing: 2px;
     color: #1a2456;
   }
+  main section .creative-packs .banner .banner-desc-flex a p:hover {
+    color: #080b1b;
+  }
+  main section .creative-packs .banner .banner-desc-flex .sprice {
+    position: relative;
+  }
+  main section .creative-packs .banner .banner-desc-flex .sprice .price {
+    position: absolute;
+    top: 4;
+    right: 1;
+  }
+  main section .creative-packs .banner .banner-desc-flex .sprice .shop {
+    background: #1a2456;
+    color: #f0efed;
+    padding: 10px;
+    font-weight: 400;
+    font-size: 12px;
+    border-radius: 20px;
+    position: relative;
+    right: 1;
+    top: 10;
+    opacity: 0;
+    transition: opacity 0.2s;
+  }
+  main section .creative-packs .banner .banner-desc-flex .sprice .shop:hover {
+    background: #080b1b;
+  }
   main section .creative-packs .banner .desc p {
     color: #1a2456;
     font-weight: 200;
     font-size: 13px;
+  }
+  main section .creative-packs .banner .desc p:hover {
+    color: #080b1b;
+  }
+  main section .creative-packs .banner:hover .img-hover {
+    opacity: 1;
+  }
+  main section .creative-packs .banner:hover .banner-desc-flex .sprice .shop {
+    opacity: 1;
   }
 }

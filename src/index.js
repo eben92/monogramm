@@ -15,7 +15,7 @@ closeBtn.addEventListener("click", () => {
   openNav.classList.remove("hide-btn");
 });
 
-// end of mobile navigation bar toggle
+// end of mobile nav bar toggle
 
 // hero slideshow
 let slideIndex = 0;

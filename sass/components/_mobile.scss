@@ -81,6 +81,211 @@
   }
 }
 
+@media (max-width: 375px) {
+  main {
+    // padding-top: 15rem;
+    section {
+      .creative-packs {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .flex-container {
+          display: flex;
+          flex-direction: column;
+          padding: 20px;
+          align-items: center;
+
+          .img {
+            a {
+              img {
+                max-width: 80vw;
+                max-height: 50vh;
+              }
+              img:hover {
+                background-image: "/assets/monogram/items.png";
+              }
+            }
+          }
+          .left-item,
+          .right-item {
+            position: relative;
+            margin: 30px 0;
+
+            .img-hover {
+              position: absolute;
+              top: 0;
+              // bottom: 0;
+              left: 0;
+              right: 0;
+              object-fit: contain;
+              opacity: 0;
+              transition: opacity 0.2s;
+            }
+
+            .p-flex {
+              display: flex;
+              justify-content: space-between;
+
+              a {
+                margin-top: 10px;
+                p {
+                  font-size: 20px;
+                  font-weight: 700;
+                  text-transform: uppercase;
+                  letter-spacing: 2px;
+                  color: $nav-bar-bg;
+                }
+
+                p:hover {
+                  color: $black-color;
+                }
+              }
+
+              .sprice {
+                position: relative;
+
+                .price {
+                  position: absolute;
+                  top: 4;
+                  right: 1;
+                }
+
+                .shop {
+                  background: #1a2456;
+                  color: #f0efed;
+                  padding: 4px;
+                  font-weight: 400;
+                  font-size: 12px;
+                  border-radius: 20px;
+                  position: relative;
+                  right: 1;
+                  top: 10;
+                  opacity: 0;
+                  transition: opacity 0.2s;
+                }
+
+                .shop:hover {
+                  background: $black-color;
+                }
+              }
+            }
+
+            .desc {
+              p {
+                color: $nav-bar-bg;
+                font-weight: 200;
+                font-size: 13px;
+              }
+
+              p:hover {
+                color: $black-color;
+              }
+            }
+          }
+
+          .left-item:hover .img-hover,
+          .right-item:hover .img-hover {
+            opacity: 1;
+          }
+
+          .left-item:hover .p-flex .sprice .shop,
+          .right-item:hover .p-flex .sprice .shop {
+            opacity: 1;
+          }
+        }
+        .banner {
+          position: relative;
+          a {
+            img {
+              max-width: 80vw;
+              max-height: 50vh;
+            }
+
+            .img-hover {
+              position: absolute;
+              top: 0;
+              left: 0;
+              right: 0;
+              bottom: 0;
+              opacity: 0;
+              transition: opacity 0.2s;
+            }
+          }
+          .banner-desc-flex {
+            display: flex;
+            justify-content: space-between;
+
+            a {
+              margin-top: 10px;
+              p {
+                font-size: 20px;
+                font-weight: 700;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+
+                color: $nav-bar-bg;
+              }
+
+              p:hover {
+                color: $black-color;
+              }
+            }
+
+            .sprice {
+              position: relative;
+
+              .price {
+                position: absolute;
+                top: 4;
+                right: 30;
+              }
+
+              .shop {
+                background: $nav-bar-bg;
+                color: $body-bg;
+                padding: 4px;
+                width: 100px;
+                font-weight: 400;
+                font-size: 12px;
+                border-radius: 20px;
+                position: relative;
+
+                top: 10;
+                opacity: 0;
+                transition: opacity 0.2s;
+              }
+
+              .shop:hover {
+                background: $black-color;
+              }
+            }
+          }
+
+          .desc {
+            p {
+              color: $nav-bar-bg;
+              font-weight: 200;
+              font-size: 13px;
+            }
+
+            p:hover {
+              color: $black-color;
+            }
+          }
+        }
+        .banner:hover .img-hover {
+          opacity: 1;
+        }
+
+        .banner:hover .banner-desc-flex .sprice .shop {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+
 @media (max-width: 999px) {
   main {
     // padding-top: 15rem;
@@ -109,22 +314,65 @@
           }
           .left-item,
           .right-item {
+            position: relative;
             margin: 30px 0;
+
+            .img-hover {
+              position: absolute;
+              top: 0;
+              // bottom: 0;
+              left: 0;
+              right: 0;
+              object-fit: contain;
+              opacity: 0;
+              transition: opacity 0.2s;
+            }
 
             .p-flex {
               display: flex;
               justify-content: space-between;
 
               a {
+                margin-top: 10px;
                 p {
                   font-size: 20px;
                   font-weight: 700;
                   text-transform: uppercase;
                   letter-spacing: 2px;
-
                   color: $nav-bar-bg;
                 }
-                margin-top: 10px;
+
+                p:hover {
+                  color: $black-color;
+                }
+              }
+
+              .sprice {
+                position: relative;
+
+                .price {
+                  position: absolute;
+                  top: 4;
+                  right: 1;
+                }
+
+                .shop {
+                  background: #1a2456;
+                  color: #f0efed;
+                  padding: 6px;
+                  font-weight: 400;
+                  font-size: 12px;
+                  border-radius: 20px;
+                  position: relative;
+                  right: 1;
+                  top: 10;
+                  opacity: 0;
+                  transition: opacity 0.2s;
+                }
+
+                .shop:hover {
+                  background: $black-color;
+                }
               }
             }
 
@@ -134,14 +382,39 @@
                 font-weight: 200;
                 font-size: 13px;
               }
+
+              p:hover {
+                color: $black-color;
+              }
             }
+          }
+
+          .left-item:hover .img-hover,
+          .right-item:hover .img-hover {
+            opacity: 1;
+          }
+
+          .left-item:hover .p-flex .sprice .shop,
+          .right-item:hover .p-flex .sprice .shop {
+            opacity: 1;
           }
         }
         .banner {
+          position: relative;
           a {
             img {
               max-width: 80vw;
               max-height: 50vh;
+            }
+
+            .img-hover {
+              position: absolute;
+              top: 0;
+              left: 0;
+              right: 0;
+              bottom: 0;
+              opacity: 0;
+              transition: opacity 0.2s;
             }
           }
           .banner-desc-flex {
@@ -149,6 +422,7 @@
             justify-content: space-between;
 
             a {
+              margin-top: 10px;
               p {
                 font-size: 20px;
                 font-weight: 700;
@@ -157,7 +431,38 @@
 
                 color: $nav-bar-bg;
               }
-              margin-top: 10px;
+
+              p:hover {
+                color: $black-color;
+              }
+            }
+
+            .sprice {
+              position: relative;
+
+              .price {
+                position: absolute;
+                top: 4;
+                right: 1;
+              }
+
+              .shop {
+                background: $nav-bar-bg;
+                color: $body-bg;
+                padding: 6px;
+                font-weight: 400;
+                font-size: 12px;
+                border-radius: 20px;
+                position: relative;
+                right: 1;
+                top: 10;
+                opacity: 0;
+                transition: opacity 0.2s;
+              }
+
+              .shop:hover {
+                background: $black-color;
+              }
             }
           }
 
@@ -167,9 +472,225 @@
               font-weight: 200;
               font-size: 13px;
             }
+
+            p:hover {
+              color: $black-color;
+            }
           }
+        }
+        .banner:hover .img-hover {
+          opacity: 1;
+        }
+
+        .banner:hover .banner-desc-flex .sprice .shop {
+          opacity: 1;
         }
       }
     }
   }
 }
+
+// @media (max-width: 375px) {
+//   main {
+//     // padding-top: 15rem;
+//     section {
+//       .creative-packs {
+//         display: flex;
+//         flex-direction: column;
+//         align-items: center;
+
+//         .flex-container {
+//           display: flex;
+//           flex-direction: column;
+//           padding: 20px;
+//           align-items: center;
+
+//           .img {
+//             a {
+//               img {
+//                 max-width: 80vw;
+//                 max-height: 50vh;
+//               }
+//               img:hover {
+//                 background-image: "/assets/monogram/items.png";
+//               }
+//             }
+//           }
+//           .left-item,
+//           .right-item {
+//             position: relative;
+//             margin: 30px 0;
+
+//             .img-hover {
+//               position: absolute;
+//               top: 0;
+//               // bottom: 0;
+//               left: 0;
+//               right: 0;
+//               object-fit: contain;
+//               opacity: 0;
+//               transition: opacity 0.2s;
+//             }
+
+//             .p-flex {
+//               display: flex;
+//               justify-content: space-between;
+
+//               a {
+//                 margin-top: 10px;
+//                 p {
+//                   font-size: 20px;
+//                   font-weight: 700;
+//                   text-transform: uppercase;
+//                   letter-spacing: 2px;
+//                   color: $nav-bar-bg;
+//                 }
+
+//                 p:hover {
+//                   color: $black-color;
+//                 }
+//               }
+
+//               .sprice {
+//                 position: relative;
+
+//                 .price {
+//                   position: absolute;
+//                   top: 4;
+//                   right: 1;
+//                 }
+
+//                 .shop {
+//                   background: #1a2456;
+//                   color: #f0efed;
+//                   padding: 10px;
+//                   font-weight: 400;
+//                   font-size: 12px;
+//                   border-radius: 20px;
+//                   position: relative;
+//                   right: 1;
+//                   top: 10;
+//                   opacity: 0;
+//                   transition: opacity 0.2s;
+//                 }
+
+//                 .shop:hover {
+//                   background: $black-color;
+//                 }
+//               }
+//             }
+
+//             .desc {
+//               p {
+//                 color: $nav-bar-bg;
+//                 font-weight: 200;
+//                 font-size: 13px;
+//               }
+
+//               p:hover {
+//                 color: $black-color;
+//               }
+//             }
+//           }
+
+//           .left-item:hover .img-hover,
+//           .right-item:hover .img-hover {
+//             opacity: 1;
+//           }
+
+//           .left-item:hover .p-flex .sprice .shop,
+//           .right-item:hover .p-flex .sprice .shop {
+//             opacity: 1;
+//           }
+//         }
+//         .banner {
+//           position: relative;
+//           a {
+//             img {
+//               max-width: 80vw;
+//               max-height: 50vh;
+//             }
+
+//             .img-hover {
+//               position: absolute;
+//               top: 0;
+//               left: 0;
+//               right: 0;
+//               bottom: 0;
+//               opacity: 0;
+//               transition: opacity 0.2s;
+//             }
+//           }
+//           .banner-desc-flex {
+//             display: flex;
+//             justify-content: space-between;
+
+//             a {
+//               margin-top: 10px;
+//               p {
+//                 font-size: 20px;
+//                 font-weight: 700;
+//                 text-transform: uppercase;
+//                 letter-spacing: 2px;
+
+//                 color: $nav-bar-bg;
+//               }
+
+//               p:hover {
+//                 color: $black-color;
+//               }
+//             }
+
+//             .sprice {
+//               position: relative;
+
+//               .price {
+//                 position: absolute;
+//                 top: 4;
+//                 right: ;
+//               }
+
+//               .shop {
+//                 background: $nav-bar-bg;
+//                 color: $body-bg;
+//                 padding: 4px;
+//                 width: 100px;
+//                 font-weight: 400;
+//                 font-size: 12px;
+//                 border-radius: 20px;
+//                 position: relative;
+
+//                 top: 10;
+//                 opacity: 0;
+//                 transition: opacity 0.2s;
+//               }
+
+//               .shop:hover {
+//                 background: $black-color;
+//               }
+//             }
+//           }
+
+//           .desc {
+//             p {
+//               color: $nav-bar-bg;
+//               font-weight: 200;
+//               font-size: 13px;
+//             }
+
+//             p:hover {
+//               color: $black-color;
+//             }
+//           }
+//         }
+//         .banner:hover .img-hover {
+//           opacity: 1;
+//         }
+
+//         .banner:hover .banner-desc-flex .sprice .shop {
+//           opacity: 1;
+//         }
+//       }
+//     }
+//   }
+// }

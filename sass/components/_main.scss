@@ -10,36 +10,79 @@
 
           .img {
             a {
-              img {
+              .img1 {
                 padding: auto;
                 margin: auto;
                 width: 100%;
                 max-height: 50vh;
               }
-              // img:hover {
-              //   background-image: "/assets/monogram/items.png";
-              // }
             }
           }
+
           .left-item,
           .right-item {
+            position: relative;
             margin: 15px;
             padding: 15px;
+
+            .img-hover {
+              position: absolute;
+              top: 0;
+              // bottom: 0;
+              left: 0;
+              right: 0;
+              object-fit: contain;
+              opacity: 0;
+              transition: opacity 0.2s;
+            }
 
             .p-flex {
               display: flex;
               justify-content: space-between;
 
               a {
+                margin-top: 10px;
+
                 p {
                   font-size: 20px;
                   font-weight: 700;
                   text-transform: uppercase;
                   letter-spacing: 2px;
-
                   color: $nav-bar-bg;
+                  transition: all 0.3s linear;
                 }
-                margin-top: 10px;
+
+                p:hover {
+                  color: $black-color;
+                }
+              }
+
+              .sprice {
+                position: relative;
+
+                .price {
+                  position: absolute;
+                  top: 4;
+                  right: 1;
+                }
+
+                .shop {
+                  background: #1a2456;
+                  color: #f0efed;
+                  padding: 10px;
+                  font-weight: 400;
+                  font-size: 12px;
+                  border-radius: 20px;
+                  position: relative;
+                  right: 1;
+                  top: 10;
+                  opacity: 0;
+                  transition: opacity 0.2s;
+                }
+
+                .shop:hover {
+                  background: $black-color;
+                }
               }
             }
 
@@ -48,15 +91,40 @@
                 color: $nav-bar-bg;
                 font-weight: 200;
                 font-size: 13px;
+                transition: all 0.3s linear;
+              }
+              p:hover {
+                color: $black-color;
               }
             }
           }
+          .left-item:hover .img-hover,
+          .right-item:hover .img-hover {
+            opacity: 1;
+          }
+
+          .left-item:hover .p-flex .sprice .shop,
+          .right-item:hover .p-flex .sprice .shop {
+            opacity: 1;
+          }
         }
         .banner {
+          position: relative;
+
           a {
             img {
-              width: 950px;
-              height: 450px;
+              width: 1050px;
+              height: 414px;
+              object-fit: cover;
+            }
+            .img-hover {
+              position: absolute;
+              top: 0;
+              left: 0;
+              right: 0;
+              bottom: 0;
+              opacity: 0;
+              transition: opacity 0.2s;
             }
           }
           .banner-desc-flex {
@@ -64,6 +132,7 @@
             justify-content: space-between;
 
             a {
+              margin-top: 10px;
               p {
                 font-size: 20px;
                 font-weight: 700;
@@ -72,7 +141,36 @@
 
                 color: $nav-bar-bg;
               }
-              margin-top: 10px;
+              p:hover {
+                color: $black-color;
+              }
+            }
+            .sprice {
+              position: relative;
+
+              .price {
+                position: absolute;
+                top: 4;
+                right: 1;
+              }
+
+              .shop {
+                background: $nav-bar-bg;
+                color: $body-bg;
+                padding: 10px;
+                font-weight: 400;
+                font-size: 12px;
+                border-radius: 20px;
+                position: relative;
+                right: 1;
+                top: 10;
+                opacity: 0;
+                transition: opacity 0.2s;
+              }
+
+              .shop:hover {
+                background: $black-color;
+              }
             }
           }
 
@@ -82,7 +180,18 @@
               font-weight: 200;
               font-size: 13px;
             }
+
+            p:hover {
+              color: $black-color;
+            }
           }
+        }
+        .banner:hover .img-hover {
+          opacity: 1;
+        }
+
+        .banner:hover .banner-desc-flex .sprice .shop {
+          opacity: 1;
         }
       }
     }
