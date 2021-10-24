@@ -111,22 +111,22 @@
         .banner {
           position: relative;
 
-          a {
-            img {
-              width: 1050px;
-              height: 414px;
-              object-fit: cover;
-            }
-            .img-hover {
-              position: absolute;
-              top: 0;
-              left: 0;
-              right: 0;
-              bottom: 0;
-              opacity: 0;
-              transition: opacity 0.2s;
-            }
+          // a {
+          img {
+            width: 1050px;
+            height: 414px;
+            object-fit: cover;
           }
+          .img-hover {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            opacity: 0;
+            transition: opacity 0.2s;
+          }
+          // }
           .banner-desc-flex {
             display: flex;
             justify-content: space-between;

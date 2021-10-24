@@ -199,11 +199,11 @@ main section .creative-packs .flex-container .right-item:hover .p-flex .sprice .
   main section .creative-packs .banner {
     position: relative;
   }
-  main section .creative-packs .banner a img {
+  main section .creative-packs .banner img {
     max-width: 80vw;
     max-height: 50vh;
   }
-  main section .creative-packs .banner a .img-hover {
+  main section .creative-packs .banner .img-hover {
     position: absolute;
     top: 0;
     left: 0;
@@ -372,11 +372,11 @@ main section .creative-packs .flex-container .right-item:hover .p-flex .sprice .
   main section .creative-packs .banner {
     position: relative;
   }
-  main section .creative-packs .banner a img {
+  main section .creative-packs .banner img {
     max-width: 80vw;
     max-height: 50vh;
   }
-  main section .creative-packs .banner a .img-hover {
+  main section .creative-packs .banner .img-hover {
     position: absolute;
     top: 0;
     left: 0;
@@ -726,12 +726,12 @@ main section .creative-packs .flex-container .right-item:hover .p-flex .sprice .
   main section .creative-packs .banner {
     position: relative;
   }
-  main section .creative-packs .banner a img {
+  main section .creative-packs .banner img {
     width: 1050px;
     height: 414px;
     object-fit: cover;
   }
-  main section .creative-packs .banner a .img-hover {
+  main section .creative-packs .banner .img-hover {
     position: absolute;
     top: 0;
     left: 0;
