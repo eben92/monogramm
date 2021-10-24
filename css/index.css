@@ -107,12 +107,9 @@ li {
     padding: 20px;
     align-items: center;
   }
-  main section .creative-packs .flex-container .img a img {
+  main section .creative-packs .flex-container .img img {
     max-width: 80vw;
     max-height: 50vh;
-  }
-  main section .creative-packs .flex-container .img a img:hover {
-    background-image: "/assets/monogram/items.png";
   }
   main section .creative-packs .flex-container .left-item,
 main section .creative-packs .flex-container .right-item {
@@ -280,12 +277,9 @@ main section .creative-packs .flex-container .right-item:hover .p-flex .sprice .
     padding: 20px;
     align-items: center;
   }
-  main section .creative-packs .flex-container .img a img {
+  main section .creative-packs .flex-container .img img {
     max-width: 80vw;
     max-height: 50vh;
-  }
-  main section .creative-packs .flex-container .img a img:hover {
-    background-image: "/assets/monogram/items.png";
   }
   main section .creative-packs .flex-container .left-item,
 main section .creative-packs .flex-container .right-item {
@@ -632,7 +626,7 @@ main section .creative-packs .flex-container .right-item:hover .p-flex .sprice .
   main section .creative-packs .flex-container {
     display: flex;
   }
-  main section .creative-packs .flex-container .img a .img1 {
+  main section .creative-packs .flex-container .img .img1 {
     padding: auto;
     margin: auto;
     width: 100%;

@@ -97,15 +97,15 @@
           align-items: center;
 
           .img {
-            a {
-              img {
-                max-width: 80vw;
-                max-height: 50vh;
-              }
-              img:hover {
-                background-image: "/assets/monogram/items.png";
-              }
+            // a {
+            img {
+              max-width: 80vw;
+              max-height: 50vh;
             }
+            // img:hover {
+            //   background-image: "/assets/monogram/items.png";
+            // }
+            // }
           }
           .left-item,
           .right-item {
@@ -302,15 +302,15 @@
           align-items: center;
 
           .img {
-            a {
-              img {
-                max-width: 80vw;
-                max-height: 50vh;
-              }
-              img:hover {
-                background-image: "/assets/monogram/items.png";
-              }
+            // a {
+            img {
+              max-width: 80vw;
+              max-height: 50vh;
             }
+            // img:hover {
+            //   background-image: "/assets/monogram/items.png";
+            // }
+            // }
           }
           .left-item,
           .right-item {
