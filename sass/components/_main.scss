@@ -197,3 +197,36 @@
     }
   }
 }
+
+@media (max-width: 3000px) {
+  main {
+    section {
+      .item-banner {
+        padding-top: 30px;
+
+        .middle-banner {
+          // width: 1351px;
+          width: 100%;
+          height: 462px;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+}
+
+// @media (max-width: 1351px) {
+//   main {
+//     section {
+//       .item-banner {
+//         padding-top: 30px;
+
+//         .middle-banner {
+//           width: 1351px;
+//           height: 462px;
+//           object-fit: cover;
+//         }
+//       }
+//     }
+//   }
+// }
