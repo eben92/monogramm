@@ -1,0 +1,228 @@
+@media (min-width: 1000px) {
+  footer {
+    .footer-container {
+      background: $nav-bar-bg;
+      margin-top: 10vh;
+      height: auto;
+      display: flex;
+      justify-content: space-around;
+      // align-items: center;
+      // text-align: center;
+      padding: 10vh;
+      color: $text-color-3;
+
+      li {
+        font-size: 12px;
+        font-weight: 300;
+        padding-bottom: 5px;
+        text-transform: capitalize;
+        width: 90px;
+      }
+
+      a {
+        color: $text-color-3;
+      }
+
+      a li:hover {
+        border-bottom: 1px solid $text-color;
+        color: $text-color;
+      }
+
+      h3 {
+        font-size: 14px;
+        font-weight: 600;
+        text-transform: uppercase;
+        padding-bottom: 10px;
+      }
+
+      p {
+        font-size: 12px;
+        font-weight: 300;
+        padding-bottom: 5px;
+
+        max-width: 25vw;
+      }
+
+      .subscribe {
+        label {
+          .f-label {
+            input {
+              background: none;
+              border: 1px solid $text-color-3;
+              padding: 5px;
+              outline: none;
+              color: $text-color-3;
+            }
+            button {
+              background: $text-color-3;
+              padding: 5px;
+              font-size: 12px;
+              font-weight: 800;
+              color: #333;
+              cursor: pointer;
+              margin: 10px;
+              border-radius: 20px;
+              border: none;
+              text-transform: uppercase;
+              width: 100px;
+              transition: all 0.2s linear;
+            }
+
+            button:hover {
+              background: white;
+            }
+          }
+        }
+
+        .social-link {
+          ul {
+            display: flex;
+            margin: 10px 0;
+
+            a {
+              // padding: 0px 10px;
+              margin-right: 10px;
+              width: 50px;
+
+              li {
+                i {
+                  font-size: 16px;
+                  background: white;
+                  padding: 10px;
+                  border-radius: 100%;
+                }
+              }
+            }
+
+            a li:hover {
+              border-bottom: none;
+            }
+          }
+        }
+      }
+
+      .red {
+        color: $text-color;
+      }
+      .red:hover {
+        border-bottom: 1px solid;
+        color: $text-color-2;
+      }
+    }
+  }
+}
+
+@media (max-width: 999px) {
+  footer {
+    .footer-container {
+      background: $nav-bar-bg;
+      margin-top: 10vh;
+      height: auto;
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+
+      justify-content: space-between;
+
+      padding: 10vh;
+      color: $text-color-3;
+
+      li {
+        font-size: 12px;
+        font-weight: 300;
+        padding-bottom: 5px;
+        text-transform: capitalize;
+        width: 90px;
+      }
+
+      a {
+        color: $text-color-3;
+      }
+
+      a li:hover {
+        border-bottom: 1px solid $text-color;
+        color: $text-color;
+      }
+
+      h3 {
+        font-size: 14px;
+        font-weight: 600;
+        text-transform: uppercase;
+        padding-bottom: 10px;
+        margin-top: 20px;
+      }
+
+      p {
+        font-size: 12px;
+        font-weight: 300;
+        padding-bottom: 5px;
+      }
+
+      .subscribe {
+        label {
+          .f-label {
+            input {
+              background: none;
+              border: 1px solid $text-color-3;
+              padding: 5px;
+              outline: none;
+              color: $text-color-3;
+            }
+            button {
+              background: $text-color-3;
+              padding: 5px;
+              font-size: 12px;
+              font-weight: 800;
+              color: #333;
+              cursor: pointer;
+              margin: 10px;
+              border-radius: 20px;
+              border: none;
+              text-transform: uppercase;
+              width: 100px;
+              transition: all 0.2s linear;
+            }
+
+            button:hover {
+              background: white;
+            }
+          }
+        }
+
+        .social-link {
+          ul {
+            display: flex;
+            margin: 10px 0;
+
+            a {
+              // padding: 0px 10px;
+              margin-right: 10px;
+              width: 50px;
+
+              li {
+                i {
+                  font-size: 16px;
+                  background: white;
+                  padding: 10px;
+                  border-radius: 100%;
+                }
+              }
+            }
+
+            a li:hover {
+              border-bottom: none;
+            }
+          }
+        }
+      }
+
+      .red {
+        color: $text-color;
+      }
+      .red:hover {
+        border-bottom: 1px solid;
+        color: $text-color-2;
+      }
+    }
+  }
+}

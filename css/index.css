@@ -10,7 +10,6 @@
 body {
   font-family: "Prompt", sans-serif;
   background: #f0efed;
-  height: 500vh;
 }
 
 a {
@@ -798,5 +797,177 @@ main section .creative-packs .flex-container .right-item:hover .p-flex .sprice .
     width: 100%;
     height: 462px;
     object-fit: cover;
+  }
+}
+@media (min-width: 1000px) {
+  footer .footer-container {
+    background: #1a2456;
+    margin-top: 10vh;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    padding: 10vh;
+    color: #ba9b9c;
+  }
+  footer .footer-container li {
+    font-size: 12px;
+    font-weight: 300;
+    padding-bottom: 5px;
+    text-transform: capitalize;
+    width: 90px;
+  }
+  footer .footer-container a {
+    color: #ba9b9c;
+  }
+  footer .footer-container a li:hover {
+    border-bottom: 1px solid #ff501c;
+    color: #ff501c;
+  }
+  footer .footer-container h3 {
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+  }
+  footer .footer-container p {
+    font-size: 12px;
+    font-weight: 300;
+    padding-bottom: 5px;
+    max-width: 25vw;
+  }
+  footer .footer-container .subscribe label .f-label input {
+    background: none;
+    border: 1px solid #ba9b9c;
+    padding: 5px;
+    outline: none;
+    color: #ba9b9c;
+  }
+  footer .footer-container .subscribe label .f-label button {
+    background: #ba9b9c;
+    padding: 5px;
+    font-size: 12px;
+    font-weight: 800;
+    color: #333;
+    cursor: pointer;
+    margin: 10px;
+    border-radius: 20px;
+    border: none;
+    text-transform: uppercase;
+    width: 100px;
+    transition: all 0.2s linear;
+  }
+  footer .footer-container .subscribe label .f-label button:hover {
+    background: white;
+  }
+  footer .footer-container .subscribe .social-link ul {
+    display: flex;
+    margin: 10px 0;
+  }
+  footer .footer-container .subscribe .social-link ul a {
+    margin-right: 10px;
+    width: 50px;
+  }
+  footer .footer-container .subscribe .social-link ul a li i {
+    font-size: 16px;
+    background: white;
+    padding: 10px;
+    border-radius: 100%;
+  }
+  footer .footer-container .subscribe .social-link ul a li:hover {
+    border-bottom: none;
+  }
+  footer .footer-container .red {
+    color: #ff501c;
+  }
+  footer .footer-container .red:hover {
+    border-bottom: 1px solid;
+    color: #ff8b68;
+  }
+}
+@media (max-width: 999px) {
+  footer .footer-container {
+    background: #1a2456;
+    margin-top: 10vh;
+    height: auto;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10vh;
+    color: #ba9b9c;
+  }
+  footer .footer-container li {
+    font-size: 12px;
+    font-weight: 300;
+    padding-bottom: 5px;
+    text-transform: capitalize;
+    width: 90px;
+  }
+  footer .footer-container a {
+    color: #ba9b9c;
+  }
+  footer .footer-container a li:hover {
+    border-bottom: 1px solid #ff501c;
+    color: #ff501c;
+  }
+  footer .footer-container h3 {
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+    margin-top: 20px;
+  }
+  footer .footer-container p {
+    font-size: 12px;
+    font-weight: 300;
+    padding-bottom: 5px;
+  }
+  footer .footer-container .subscribe label .f-label input {
+    background: none;
+    border: 1px solid #ba9b9c;
+    padding: 5px;
+    outline: none;
+    color: #ba9b9c;
+  }
+  footer .footer-container .subscribe label .f-label button {
+    background: #ba9b9c;
+    padding: 5px;
+    font-size: 12px;
+    font-weight: 800;
+    color: #333;
+    cursor: pointer;
+    margin: 10px;
+    border-radius: 20px;
+    border: none;
+    text-transform: uppercase;
+    width: 100px;
+    transition: all 0.2s linear;
+  }
+  footer .footer-container .subscribe label .f-label button:hover {
+    background: white;
+  }
+  footer .footer-container .subscribe .social-link ul {
+    display: flex;
+    margin: 10px 0;
+  }
+  footer .footer-container .subscribe .social-link ul a {
+    margin-right: 10px;
+    width: 50px;
+  }
+  footer .footer-container .subscribe .social-link ul a li i {
+    font-size: 16px;
+    background: white;
+    padding: 10px;
+    border-radius: 100%;
+  }
+  footer .footer-container .subscribe .social-link ul a li:hover {
+    border-bottom: none;
+  }
+  footer .footer-container .red {
+    color: #ff501c;
+  }
+  footer .footer-container .red:hover {
+    border-bottom: 1px solid;
+    color: #ff8b68;
   }
 }
