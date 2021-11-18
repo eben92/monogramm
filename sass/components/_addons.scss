@@ -1,0 +1,46 @@
+section {
+  .add-ons-container {
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
+    // margin: 10px 20px;
+    // padding: 15px;
+
+    .bottom-items {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      .btm {
+        margin-bottom: 7px;
+        margin-left: 7px;
+        padding: 20px;
+      }
+    }
+    img {
+      width: 430px;
+      height: 340px;
+      padding: 20px;
+    }
+
+    .top-items {
+      .first-flex,
+      .second-flex {
+        position: relative;
+        // margin: 15px;
+        // padding: 15px;
+
+        .add-hover {
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          // object-fit: contain;
+          opacity: 0;
+          transition: opacity 0.2s;
+        }
+      }
+    }
+  }
+}
