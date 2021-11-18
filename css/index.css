@@ -799,6 +799,36 @@ main section .creative-packs .flex-container .right-item:hover .p-flex .sprice .
     object-fit: cover;
   }
 }
+section .add-ons-container .bottom-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+section .add-ons-container .bottom-items .btm {
+  margin-bottom: 7px;
+  margin-left: 7px;
+  padding: 20px;
+}
+section .add-ons-container img {
+  width: 430px;
+  height: 340px;
+  padding: 20px;
+}
+section .add-ons-container .top-items .first-flex,
+section .add-ons-container .top-items .second-flex {
+  position: relative;
+}
+section .add-ons-container .top-items .first-flex .add-hover,
+section .add-ons-container .top-items .second-flex .add-hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
 @media (min-width: 1000px) {
   footer .footer-container {
     background: #1a2456;
@@ -928,6 +958,7 @@ main section .creative-packs .flex-container .right-item:hover .p-flex .sprice .
     padding: 5px;
     outline: none;
     color: #ba9b9c;
+    width: 70%;
   }
   footer .footer-container .subscribe label .f-label button {
     background: #ba9b9c;
